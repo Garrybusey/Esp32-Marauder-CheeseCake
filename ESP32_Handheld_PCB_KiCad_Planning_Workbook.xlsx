@@ -1,0 +1,71 @@
+# PCB Floorplan
+
+## Recommended handheld size
+
+```text
+Width: 60 mm
+Height: 100 mm
+Thickness: 1.6 mm
+Layers: 2
+```
+
+## How to set PCB size in KiCad
+
+In **PCB Editor**:
+
+1. Select layer `Edge.Cuts`.
+2. Use the line/rectangle tool.
+3. Draw the board outline.
+
+Exact rectangle coordinates:
+
+```text
+Top-left:      X = 0,  Y = 0
+Top-right:     X = 60, Y = 0
+Bottom-right:  X = 60, Y = 100
+Bottom-left:   X = 0,  Y = 100
+```
+
+## Recommended placement
+
+```text
+TOP OF BOARD
+
+[ ESP32 module ]
+Antenna points toward top edge.
+Keep antenna zone clear.
+
+[ OLED display ]
+Centered under ESP32.
+
+[ Buttons ]
+D-pad or 5-button layout.
+
+[ Optional headers ]
+CC1101 / PN532 / microSD / GPIO.
+
+[ USB-C + charger + regulator ]
+Bottom edge.
+
+BOTTOM OF BOARD
+```
+
+## Back side
+
+Use the back side for:
+
+- LiPo battery space,
+- test pads,
+- optional microSD,
+- labeling/debug notes.
+
+## Antenna keepout
+
+For an ESP32 module with built-in antenna:
+
+- no copper under antenna,
+- no ground pour under antenna,
+- no battery under antenna,
+- no display metal near antenna,
+- no tall parts near antenna.
+
