@@ -1,0 +1,24 @@
+# Enclosure Notes
+
+## Suggested V1 enclosure dimensions
+
+```text
+Outer size: 70 mm x 115 mm x 22 mm
+PCB size: 60 mm x 100 mm
+Wall thickness: 2 mm
+Screws: M2 or M2.5
+```
+
+## Mechanical layout
+
+- OLED window near top/front.
+- 5 button holes under OLED.
+- USB-C cutout on bottom edge.
+- Battery pocket on back side.
+- Antenna area must remain plastic only.
+- Avoid metal screws directly beside antenna area.
+
+## Beginner-friendly enclosure style
+
+Use a simple two-piece screw enclosure first. Snap-fit designs look cleaner but are harder to tune.
+
