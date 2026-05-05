@@ -1,0 +1,18 @@
+Reference,Quantity,Description,Manufacturer,Manufacturer PN,Footprint,Purpose,Notes
+U1,1,ESP32 Wi-Fi/BLE module,Espressif,ESP32-WROOM-32E / compatible,RF_Module:ESP32-WROOM-32,Main MCU,Use your existing classic ESP32 module if pin-compatible
+J_DEVKIT,2,Optional ESP32 DevKit socket headers,Generic,1x19 2.54mm socket,PinSocket_1x19_P2.54mm,Alternate mounting,Only populate if using full DevKit board
+J1,1,USB-C receptacle,HRO/Generic,TYPE-C-31-M-12,USB_C_Receptacle_HRO_TYPE-C-31-M-12,USB power/programming,Use 5.1k CC resistors to GND
+U2,1,USB-UART bridge,WCH,CH340C,SOIC-16,Programming classic ESP32,CP2102N is nicer alternative
+U3,1,LiPo charger,Microchip,MCP73831T-2ACI/OT,SOT-23-5,Battery charging,Simple V1 charger
+U4,1,3.3V regulator,Diodes Inc,AP2112K-3.3TRG1,SOT-23-5,Power rail,Good for ESP32 current spikes
+J2,1,LiPo battery connector,JST,B2B-PH-K-S,JST_PH_B2B-PH-K_1x02,Battery input,Clearly label polarity
+DS1,1,1.3 inch I2C OLED,Generic,SSD1306/SH1106 128x64,1x04 header or module footprint,Display,OLED VCC/GND/SDA/SCL
+SW1-SW5,5,Tactile button,Generic,TL3342 style,SW_SPST_TL3342,User input,Up/Down/Left/Right/OK
+J3,1,CC1101 module header,Generic,2x04 header,PinHeader_2x04_P2.54mm,Optional sub-GHz module,Lab/legal use only
+J4,1,PN532 module header,Generic,1x06/1x08 header,PinHeader_1x06/1x08_P2.54mm,Optional NFC module,Use own test tags only
+J5,1,microSD socket or header,Generic,microSD SPI socket,microSD footprint or header,Optional logging,Can be omitted for V1
+D1,1,IR LED 940nm,Generic/Vishay,TSAL6200 or generic,LED_THT/SMD,Optional IR TX,Drive with MOSFET
+U5,1,IR receiver 38kHz,Generic/Vishay,TSOP38238 / VS1838B,THT/SMD module,Optional IR RX,3.3V output preferred
+Q1-Q2,2,N-MOSFET,Generic/AO,AO3400A,SOT-23,IR/vibration drivers,Logic-level MOSFET
+R_MISC,25,0603 resistors,Generic,Assorted,R_0603_1608Metric,Pull-ups/dividers,"Use 10k, 4.7k, 5.1k, 100k"
+C_MISC,30,0603 capacitors,Generic,Assorted,C_0603_1608Metric,Decoupling/filtering,"0.1uF, 10uF, 47uF"
